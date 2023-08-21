@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="buttonstyle.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="C:\Users\HP\Pictures\Screenshots\logo-removebg-preview.png" class="logo">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header"><span>H</span>ome</a></li>
+                    <li><a href="#about"><span>A</span>bout</a></li>
+                    <li><a href="#Skills"><span>S</span>kills</a></li>
+                    <li><a href="#contact"><span>C</span>ontact</a></li>
+                    <li><a href="#contact"><span>R</span>esume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Lokesh</span><br>I'm a <span class="auto-type"></span></h1>
+            </div>
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed(".auto-type",{
+                    strings : ["YouTuber", "Online gamer", "video editor"],
+                    typeSpeed : 100,
+                    backSpeed : 100,
+                    looped : true
+                })
+            </script>
+        </div>
+
+    </div>
+    <!-- ---------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="C:\Users\HP\Pictures\Screenshots\fb2513984122204398.jpeg" height="330px"width="10px" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>
+                            Greetings! I am Lokesh, an enthusiastic and determined MCA student. My educational voyage has been a fusion of exploration and progress as I plunge into the coding universe. Within the framework of my academic curriculum and extracurricular involvements, I have been nurturing proficiencies in various programming languages.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Interest')">Interest</p>
+                            <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                            <p class="tab-links" onclick="opentab('education')">education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Interest">
+                            <ul>
+                                <li><span>Football/vollyball</span><br>watching and playing these sport is one of my interest</li>
+                                <li><span>YouTube</span><br>creating a content and video editing</li>
+                                <li><span>Animation</span><br>watching animation and interested in designing</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Achievements">
+                            <ul>
+                                <li><span>vollyball</span><br>participated in district levels</li>
+                                
+                               
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>SSLC</li>
+                                <li><span>2018</span><br>PUC</li>
+                                <li><span>2019-21</span><br>Degree-BSC</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------Skills------------- --->
+    <div id="Skills">
+        <div class="container">
+            <h3 class="sub-title">my photography</h3><br>
+            <div class="work-list">
+                <div>
+                    <img src="C:\Users\HP\Pictures\Screenshots\5bfc0a6fac2640fca7cbcdbff277893d.png" height="300px" width="400px">
+                </div>
+                <div>
+                    <img src="C:\Users\HP\Pictures\Screenshots\new.png" height="300px" width="3000px">
+                </div>
+                <div>
+                    <img src="C:\Users\HP\Pictures\Screenshots\IMG_20201115_190104 (3).png" height="300px" width="100px">
+                </div>
+               
+            </div>
+            <a href="#" class="btn">see more</a>
+            <h6 class="sub-title">my skills</h6><br>
+            <div class="boxs">
+                <h3>Programming Languages</h3><br>
+                <div class="box">Java</div>
+                <div class="box">C</div>
+                <div class="box">HTML</div>
+                <div class="box">css</div>
+                
+                
+            </div>
+
+
+        </div>
+</div><br><br>
+<!-------contact------ ---->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>  mca.lokesh24@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 7899061669</p>
+            <div class="social-icons">
+                <a href=""><i class="fa fab fa-youtube"></i></a>
+                <a href=""><i class="fa fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+            </div><br>
+            <a href=""class="btn btn2"> View Resume </a>
+         </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit"class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © Lokesh.Designed by Lokesh</p>
+</div>
+</div>
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+}
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
